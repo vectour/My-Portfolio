@@ -1,0 +1,29 @@
+$--h1-font-size: 2.25em;
+$--h2-font-size: 1.875em;
+$--h3-font-size: 1.35em;
+$--normal-font-size: 0.875em;
+$--small-font-size: 0.75em;
+$--smaller-font-size: 0.5em;
+
+
+@media screen and (min-width: 576px) {
+    $--h1-font-size: 3em;
+    $--h2-font-size: 2em;
+    $--h3-font-size: 1.5em;
+    $--normal-font-size: 1em;
+    $--small-font-size: 0.75em;
+    $--smaller-font-size: 0.5em;
+
+
+
+} 
+
+@media screen and (min-width: 768px) {
+    $--h1-font-size: 4em;
+    $--h2-font-size: 2.75em;
+    $--h3-font-size: 2em;
+    $--normal-font-size: 1.5em;
+    $--small-font-size: 0.875em;
+    $--smaller-font-size: 0.675em;
+
+}
