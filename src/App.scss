@@ -40,7 +40,9 @@ a {
 }
 
 @media screen and (max-width: 576px) {
-    padding: 1rem 0.5rem 0;
+    .container{
+        padding: 1rem 0.5rem 0;
+    }
 
     
 }
