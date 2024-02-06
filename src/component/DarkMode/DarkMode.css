@@ -49,12 +49,13 @@
     position: absolute;
     width: 20px;
     top: 5px;
-    z-index: 100;
+    z-index: ;
 }
 .dark_mode_label svg.sun {
     left: 5px;
     fill: #fff;
     transition: 0.3s;
+    z-index: 1;
 }
 .dark_mode_label svg.moon {
     left: 40px;

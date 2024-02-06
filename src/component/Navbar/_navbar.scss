@@ -110,6 +110,7 @@
         align-items: center;
         flex-direction: column;
         height: 100vh;
+        z-index: 10;
 
         svg {
             cursor: pointer;

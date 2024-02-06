@@ -52,7 +52,6 @@ const Navbar = () => {
                         return <li key={index}><a href ={`#${navlink}`}>{navlink}</a></li>
                     })}
                 </ul>
-                <div className='close-toggle'><FaTimes /></div>
             </div>
             <div className='dark-mode'>
                 <DarkMode />
