@@ -10,10 +10,16 @@
     padding: 0 1em;
     background-color: var(--header-bg);
     color: var(--header-color);
-    position: relative;
 
     .hide{
         display: none;
+    }
+
+    .dark-mode{
+        @media screen and (max-width: 992px) {
+            display: none;
+            
+        }
     }
 
 
@@ -47,19 +53,92 @@
         }
     }
 
-    .nav-toggle{
+    // .nav-toggle{
 
+    //     display: none;
+
+    //     @media screen and (max-width: 992px) {
+    //         display: block;   
+    //     }
+        
+    //     }
+
+    .nav-toggle {
+        background-color: var(--body-background);
+        color: var(--body-color);
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
         display: none;
 
         @media screen and (max-width: 992px) {
-            display: block;   
-        }
-        
+            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            
         }
 
-        .close-toggle{
-            display: none;
+        svg {
+            width: 50%;
+            height: 50%;
         }
+
+    }
+
+    .mobile-menu {
+        background-color: black;
+        width: 4rem;
+        height: 4rem;
+        position: fixed;
+        border-radius: 50%;
+        right: 0;
+        top: 0;
+    }
+
+    .close-toggle {
+        color: white;
+        position: fixed;
+        top: 10rem;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+
+        svg {
+            cursor: pointer;
+            width: 1.5rem;
+            height: 1.5rem;
+            position: absolute;
+            top: 0;
+            right: 2rem;
+        }
+
+        li {
+            list-style: none;
+            margin-top: 4rem;
+
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 1.5rem;
+                opacity: 0.6;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+        }
+    }
+
+    
 
 
     

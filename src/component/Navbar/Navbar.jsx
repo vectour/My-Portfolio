@@ -10,7 +10,7 @@ const Navbar = () => {
 
     const [ toggle, setToggle] = useState(false);
 
-    const menuVarians = {
+    const menuVariants = {
         hidden: {
             scale: 0,
         },
@@ -58,8 +58,27 @@ const Navbar = () => {
                 <DarkMode />
             </div>
             <div className = "nav-toggle">
-                <FaAlignJustify className='toggle-btn' />
+                <FaAlignJustify onClick={() => {
+                    setToggle(true)
+                }} className='toggle-btn' />
             </div>
+            <motion.div className="mobile-menu"
+                variants={menuVariants}
+                initial = "hidden"
+                animate = {toggle ? "visible": "hidden"}
+            >
+            </motion.div>
+            <motion.div className='close-toggle'
+                variants={navLinkVariants}
+                animate={toggle ? "visible" : "hidden"}
+                >
+                <FaTimes onClick={ () => {
+                    setToggle(false)
+                }} />
+                {navLinks.map((navlink, index) => {
+                        return <li key={index}><a href ={`#${navlink}`}>{navlink}</a></li>
+                    })}
+            </motion.div>
 
         </nav>
         
