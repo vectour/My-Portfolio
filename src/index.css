@@ -1,1 +1,21 @@
-/*# sourceMappingURL=index.css.map */
+:root{
+
+    --body-background: white;
+    --body-color: black;
+    --link-color: navy;
+    --header-bg : black;
+    --header-color : white;
+}
+
+[dark-theme = "dark"] {
+    --body-background: black;
+    --body-color: white;
+    --link-color: cyan;
+    --header-bg: white;
+    --header-color: black;
+
+}
+
+*{
+    transition: all 0.3s ease-in-out;
+}
