@@ -15,12 +15,12 @@
         display: none;
     }
 
-    .dark-mode{
-        @media screen and (max-width: 992px) {
-            display: none;
+    // .dark-mode{
+    //     @media screen and (max-width: 992px) {
+    //         display: none;
             
-        }
-    }
+    //     }
+    // }
 
 
     .nav-links {
@@ -103,7 +103,7 @@
     .close-toggle {
         color: white;
         position: fixed;
-        top: 10rem;
+        top:4rem;
         left: 0;
         width: 100%;
         display: flex;
@@ -118,6 +118,8 @@
             position: absolute;
             top: 0;
             right: 2rem;
+
+
         }
 
         li {
